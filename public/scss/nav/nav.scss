@@ -1,0 +1,99 @@
+nav {
+    // margin: 0 auto;
+    width: 1200px;
+    justify-content: space-evenly;
+    padding: 10px;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+        li {
+            list-style-type: none;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'LatoLight';
+            font-size: 15px;
+        }
+        .nav1 {
+            width: 200px;
+            height: 40px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: red;
+            
+        }
+        .nav2 {
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: blue;
+        }
+        .nav3 {
+            width: 150px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: yellow;
+        }
+        .nav4 {
+            width: 160px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: green;
+        }
+        .nav5 {
+            width: 120px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: orange;
+        }
+        .nav6 {
+            width: 100px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: purple;
+        }
+        .nav7 {
+            width: 100px;
+            border-radius: 8px;
+            text-align: center;
+
+            //background-color: teal;
+            a {
+                color: red;
+                margin-right: 5px;
+            }
+            span {
+                .fa-tag {
+                    color: red;
+                    transform: rotate(95deg);
+                    // padding: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+        .nav8 {
+            width: 140px;
+            border-radius: 8px;
+            text-align: center;
+            //background-color: sandybrown;
+        }
+        li:hover {
+            background-color: #F3F3F3;
+        }
+    }
+}
+
+@font-face {
+    font-family: "LatoLight";
+    src: url("../../fonts/Lato/Lato-Light.ttf");
+}

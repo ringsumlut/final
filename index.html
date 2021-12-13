@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Final</title>
+</head>
+<div class="top">
+    <div class="logo"><img src="images/logo.svg" /> </div>
+    <div class="input-icons">
+        <i class="fal fa-search icon"></i>
+        <input class="input-field" type="text" placeholder="Search hundreds of ways to brew...">
+    </div>
+    <div class="shopping">
+        <a href="#">FREE SHIPPING $29+</a>
+        <i class="fal fa-user" id="open-button" onclick="openForm()"></i>
+        <i class="fal fa-shopping-cart"></i>
+    </div>
+
+</div>
+<nav>
+    <ul>
+        <li class="nav1"><a href="#">COFFEE, TEA & MORE</a></li>
+        <li class="nav2"><a href="#">COFFEE MAKERS</a></li>
+        <li class="nav3"><a href="#">ACCESSORIES</a></li>
+        <li class="nav4"><a href="#">AUTO DELIVERY</a></li>
+        <li class="nav5"><a href="#">GET STARTED</a></li>
+        <li class="nav6"><a href="#">GIFT GUIDE</a></li>
+        <li class="nav7"><span><i class='fas fa-tag'></i></span><a href="#">DEALS</a></li>
+        <li class="nav8"><a href="#">CUSTOMIZE</a></li>
+    </ul>
+</nav>
+<!-- Login Form -->
+<div class="form-popup" id="myForm">
+    <form class="form-container">
+            <h1>Login Here!</h1>
+            <input type="email" placeholder="Email Address" id="loginEmail">
+            <input type="password" placeholder="Password" id="loginPass">
+            <input type="submit" value="Login" id="loginSubmit" onclick="login()">
+   
+            <h2>don't have an account?</h2>
+            <h1>Sign Up!</h1>
+            <input type="text" placeholder="First Name" id="signUpFName">
+            <input type="text" placeholder="Last Name" id="signUpLName">
+            <input type="email" placeholder="Email Address" id="signUpEmail">
+            <input type="password" placeholder="Password" id="signUpPass">
+            <input type="submit" value="Sign Up" id="signUpSubmit" onclick="createAccount()">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<div class="banner">
+    <img src="images/banner.webp" />
+</div>
+
+<!-- Drop Downs -->
+<div class="MainDropdown">
+    <!-- dropdown 1 -->
+    <div class="dropdown">
+        <div class="dropbtn">Categories
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search categories" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />Bundles <span>(15)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Coffee Specialty Beverage <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Single Serve <span>(15)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Single Serve And Carafe <span>(3)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Single Serve - Slim Profile <span>(3)</span></li></div>
+            </div>
+        </div>
+    </div>
+    <!-- dropdown 2 -->
+    <div class="dropdown">
+        <div class="dropbtn">Brew Type
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search brew type" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />Bagged Coffee <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />K-Cup <span>(17)</span></li></div>
+            </div>
+        </div>
+    </div>
+    <!-- dropdown 3 -->
+    <div class="dropdown">
+        <div class="dropbtn">Reservoir
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search reservoir" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />60 oz or more<span>(7)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Add Water Each Time <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Upto 52 oz <span>(3)</span></li></div>
+            </div>
+        </div>
+    </div>
+    <!-- dropdown 4 -->
+    <div class="dropdown">
+        <div class="dropbtn">Color
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search color" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />Artic Gray <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Black <span>(12)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Black Stainless <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Brushed Gold<span>(3)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Brushed Silver <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Brushed Slate <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Cardinal Red <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Cool Aqua <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Dark Charcoal <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Default <span>(4)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Dusty Rose <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Evening Teal <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Farmhouse White <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Gray <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Matte Black <span>(8)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Matte Navy <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Matte White <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Nickel <span>(3)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Oasis <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Poppy Red <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Red <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Rhubard <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Sandstone <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Silver <span>(3)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Silver Sage<span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Studio Gray <span>(2)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Tropical Blue <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Vintage Red <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Volcanic Glass <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />White <span>(2)</span></li></div>
+            </div>
+        </div>
+    </div>
+    <!-- dropdown 5 -->
+    <div class="dropdown">
+        <div class="dropbtn">Commercial
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search commercial" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><input type="checkbox" />Commercial <span>(1)</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- dropdown 6 -->
+    <div class="dropdown">
+        <div class="dropbtn">Features
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropSearchIcon">
+                <i class="fal fa-search icon"></i>
+                <input type="text" placeholder="Search features" id="myInput" class="myInput">
+            </div>
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />Digital Clock <span>(5)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Display Screen <span>(8)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Froths Milk <span>(5)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Iced Setting <span>(6)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Multi-Position Water Reservoir <span>(1)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Strength Control <span>(5)</span></li></div>
+                <div class="checkboxDiv"><li><input type="checkbox" />Temperature Control <span>(3)</span></li></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dropdown 7 -->
+    <div class="dropdownlast">
+        <div class="dropbtnlast">Sort by <br> Popularity (all time)
+            <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="divInputs">
+                <div class="checkboxDiv"><li><input type="checkbox" />Popularity (all time) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />Popularity (this week) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />Price (lowest first) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />Price (highest first) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />Name (A - Z) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />Name (Z - A) </li></div>
+                <div class="checkboxDiv"><input type="checkbox" />New </li></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Body items -->
+<div class="itemList">
+</div>
+
+<body>
+
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>

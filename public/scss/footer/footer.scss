@@ -1,0 +1,109 @@
+.footer {
+    margin-top: 40px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "LatoRegular";
+
+    .footerBar {
+        width: 1200px;
+        height: 50px;
+        background-color: #3b2b2f;
+        margin: 0 auto;
+        justify-content: center;
+        line-height: 50px;
+        color: white;
+
+        .locationIcon {
+            display: flex;
+            // background-color: white;
+            margin-right: 650px;
+            justify-content: space-evenly;
+
+            .fa-map-marker-alt {
+                margin-top: 15px;
+                margin-right: 20px;
+            }
+            .find {
+                margin-right: 10px;
+            }
+        }
+
+        .followUs {
+            // background-color: white;
+            display: flex;
+            float: right;
+            margin-top: -65px;
+            margin-right: 100px;
+
+            p {
+                margin-right: 10px;
+            }
+            i {
+                margin-top: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    // bottom footer
+
+    .BotFooter {
+        width: 1200px;
+        display: flex;
+        // background-color: hotpink;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        
+
+        .role4 {
+            h3 {
+                margin-top: 40px;
+            }
+        }
+    }
+    .footerLine {
+        margin: 0 auto;
+        width: 1200px;
+        height: 1px;
+        background-color: grey;
+    }
+    .footerCopyRight {
+        margin: 0 auto;
+        width: 1200px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .footer {
+        text-align: center;
+        .footerBar {
+          display: block;
+            height: 150px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            .locationIcon {
+                display: block;
+            }
+            .followUs {
+                display: block;
+            }
+        }
+        .BotFooter {
+            display: block;
+        }
+    }
+}
+
+
+@font-face {
+    font-family: "LatoLight";
+    src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../../fonts/Lato/Lato-Regular.ttf");
+}

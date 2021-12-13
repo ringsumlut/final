@@ -1,0 +1,608 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.app {
+  height: 100%;
+  position: relative; }
+
+nav {
+  width: 1200px;
+  justify-content: space-evenly;
+  padding: 10px; }
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      list-style-type: none;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      line-height: 40px; }
+    nav ul a {
+      text-decoration: none;
+      color: black;
+      font-family: 'LatoLight';
+      font-size: 15px; }
+    nav ul .nav1 {
+      width: 200px;
+      height: 40px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav2 {
+      width: 150px;
+      height: 40px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav3 {
+      width: 150px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav4 {
+      width: 160px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav5 {
+      width: 120px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav6 {
+      width: 100px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul .nav7 {
+      width: 100px;
+      border-radius: 8px;
+      text-align: center; }
+      nav ul .nav7 a {
+        color: red;
+        margin-right: 5px; }
+      nav ul .nav7 span .fa-tag {
+        color: red;
+        transform: rotate(95deg);
+        margin-right: 10px; }
+    nav ul .nav8 {
+      width: 140px;
+      border-radius: 8px;
+      text-align: center; }
+    nav ul li:hover {
+      background-color: #F3F3F3; }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+.banner {
+  width: 1200px;
+  margin: 0 auto; }
+  .banner img {
+    margin-top: 20px; }
+
+.top {
+  margin-top: 20px;
+  display: flex; }
+  .top .logo img {
+    width: 180px;
+    margin-left: 35px; }
+  .top a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 5px;
+    font-family: 'LatoLight'; }
+  .top .input-icons i {
+    position: absolute; }
+  .top .input-icons {
+    margin: 0 auto;
+    width: 550px;
+    margin-bottom: 10px; }
+  .top .icon {
+    padding: 10px;
+    color: #303C4B;
+    min-width: 50px; }
+  .top .input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px #D2D2D2 solid;
+    background-color: #F3F3F3; }
+  .top input[type='text'] {
+    text-align: left;
+    padding-left: 50px; }
+  .top .shopping {
+    margin-right: 100px;
+    margin-top: 8px; }
+    .top .shopping a {
+      margin-right: 50px; }
+    .top .shopping .fa-user {
+      margin-top: 5px;
+      margin-right: 50px; }
+    .top .shopping .fa-shopping-cart {
+      margin-top: 5px;
+      margin-right: 50px; }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+.MainDropdown {
+  width: 1200px;
+  margin: 0 auto; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "LatoLight"; }
+
+.dropdown-arrow {
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #999999;
+  margin-left: 90px;
+  margin-top: -28px; }
+
+.dropdown-content {
+  transform: scale(0);
+  transition: transform .0s linear .6s;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 320px;
+  max-height: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 2px solid #000;
+  margin-top: 15px;
+  overflow: auto; }
+
+li {
+  list-style: none; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content li:hover {
+  background-color: #F3F3F3; }
+
+.dropdown:hover .dropdown-content {
+  transform: scale(1);
+  transition-delay: .0s; }
+
+.dropdown:hover .dropdown-arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333;
+  border-top: 10px solid transparent;
+  margin-top: -40px; }
+
+.dropdown:hover .dropbtn {
+  border: 2px solid #000; }
+
+.dropbtn {
+  width: 120px;
+  height: 50px;
+  text-align: left;
+  line-height: 50px;
+  border: 2px solid #999999;
+  border-radius: 5px; }
+
+.dropSearchIcon i {
+  position: absolute; }
+
+.dropSearchIcon {
+  margin: 0 auto;
+  width: 280px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  border-radius: 5px; }
+
+.icon {
+  padding: 10px;
+  color: #303c4b;
+  min-width: 50px; }
+
+.myInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px #d2d2d2 solid;
+  background-color: #f3f3f3; }
+
+input[type="text"] {
+  text-align: left;
+  padding-left: 50px; }
+
+.divInputs {
+  color: #000;
+  margin-left: 11px; }
+
+.checkboxDiv {
+  height: 50px;
+  border-bottom: 1px solid #999999;
+  line-height: 50px; }
+
+span {
+  color: #999999;
+  margin-left: 10px; }
+
+input[type="checkbox"] {
+  margin-right: 5px; }
+
+.dropdownlast {
+  position: relative;
+  display: inline-block;
+  font-family: "LatoLight";
+  margin-left: 300px; }
+
+.dropbtnlast {
+  width: 150px;
+  height: 50px;
+  text-align: left; }
+
+.dropbtnlast:hover .dropdown-content {
+  transform: scale(1);
+  transition-delay: .0s; }
+
+.dropbtnlast:hover .dropdown-arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333;
+  border-top: 10px solid transparent;
+  margin-top: -40px; }
+
+.dropbtnlast:hover .dropbtn {
+  border: 2px solid #000; }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  margin-top: 60px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  font-family: "LatoLight";
+  /* Add styles to the form container */ }
+  .form-popup .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    /* Full-width input fields */
+    /* When the inputs get focus, do something */
+    /* Add a red background color to the cancel button */
+    /* Add some hover effects to buttons */ }
+    .form-popup .form-container input[type="text"],
+    .form-popup .form-container input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1; }
+    .form-popup .form-container input[type="text"],
+    .form-popup .form-container input[type="email"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1; }
+    .form-popup .form-container input[type="text"]:focus,
+    .form-popup .form-container input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none; }
+    .form-popup .form-container .cancel {
+      background-color: red;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8; }
+    .form-popup .form-container #loginSubmit {
+      background-color: #04aa6d;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8; }
+    .form-popup .form-container #signUpSubmit {
+      background-color: #04aa6d;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8; }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+.itemList {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "LatoRegular";
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .itemList .item1 {
+    width: 280px;
+    min-height: 620px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer; }
+    .itemList .item1 .includes p {
+      font-size: 15px;
+      margin-left: 10px; }
+    .itemList .item1 .includes li {
+      font-size: 12px;
+      margin-left: 30px;
+      list-style-type: disc; }
+    .itemList .item1 .topBanner .banner {
+      width: 110px;
+      border-top: 10px solid #4e36ab;
+      border-left: 10px solid #4e36ab;
+      border-bottom: 10px solid #4e36ab;
+      border-right: 10px solid #fff;
+      background: #4e36ab;
+      border-radius: 3px;
+      float: left; }
+    .itemList .item1 .topBanner p {
+      position: absolute;
+      margin-left: 5px;
+      font-size: 12px;
+      color: white; }
+    .itemList .item1 .topBanner .bannerElite {
+      width: 180px;
+      border-top: 10px solid #007c91;
+      border-left: 10px solid #007c91;
+      border-bottom: 10px solid #007c91;
+      border-right: 10px solid #fff;
+      background: #007c91;
+      border-radius: 3px;
+      float: left; }
+    .itemList .item1 .topBanner .bannerSlim {
+      width: 220px;
+      border-top: 10px solid #4e36ab;
+      border-left: 10px solid #4e36ab;
+      border-bottom: 10px solid #4e36ab;
+      border-right: 10px solid #fff;
+      background: #4e36ab;
+      border-radius: 3px;
+      float: left; }
+    .itemList .item1 img {
+      width: 270px;
+      margin-top: 10px; }
+    .itemList .item1 .itemName {
+      font-family: "LatoRegular";
+      margin-left: 10px; }
+    .itemList .item1 .itemPrice {
+      font-size: 12px; }
+      .itemList .item1 .itemPrice .promoPrice {
+        color: red;
+        font-size: 18px; }
+      .itemList .item1 .itemPrice .promo {
+        text-decoration: line-through; }
+    .itemList .item1 .originalPrice {
+      font-size: 12px; }
+      .itemList .item1 .originalPrice .regPrice {
+        color: #000;
+        font-size: 18px; }
+      .itemList .item1 .originalPrice .promoPrice {
+        color: red;
+        font-size: 18px; }
+      .itemList .item1 .originalPrice .promo {
+        text-decoration: line-through; }
+    .itemList .item1 .rate {
+      margin-left: 10px;
+      display: flex; }
+      .itemList .item1 .rate .fa-star-half-o,
+      .itemList .item1 .rate .fa-star {
+        color: #fac30b; }
+      .itemList .item1 .rate .unrated {
+        color: #d9d6d9;
+        cursor: pointer; }
+      .itemList .item1 .rate p {
+        margin-left: 10px;
+        font-size: 14px; }
+    .itemList .item1 .coupon {
+      display: flex; }
+      .itemList .item1 .coupon .couponLogo {
+        background-color: #5a0000;
+        width: 120px;
+        height: 25px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 25px;
+        color: #fff;
+        margin-left: 10px; }
+      .itemList .item1 .coupon p {
+        color: #5a0000;
+        font-size: 12px;
+        margin-left: 10px; }
+        .itemList .item1 .coupon p .smaller {
+          color: #5a0000;
+          font-size: 10px; }
+    .itemList .item1 .shipping {
+      width: 260px;
+      display: flex; }
+      .itemList .item1 .shipping img {
+        margin-left: 20px;
+        margin-top: 2px;
+        width: 30px;
+        height: 20px;
+        color: #000; }
+      .itemList .item1 .shipping p {
+        margin-left: 15px;
+        width: 100px; }
+    .itemList .item1 .buybutton {
+      width: 280px;
+      justify-content: center; }
+      .itemList .item1 .buybutton .buybtn {
+        width: 140px;
+        height: 40px;
+        margin-left: 70px;
+        margin-top: 40px;
+        background-color: green;
+        border-radius: 8px;
+        border: none;
+        display: none; }
+  .itemList .item1:hover .buybtn {
+    display: inline-block;
+    cursor: pointer; }
+  .itemList .item1:hover {
+    border: 1px solid black; }
+  .itemList .quizImg {
+    margin-top: 32px;
+    cursor: pointer; }
+    .itemList .quizImg img {
+      width: 280px;
+      height: 600px; }
+  .itemList .choosePage {
+    margin-top: 40px;
+    display: flex;
+    text-align: center; }
+    .itemList .choosePage .page1 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #2f4053; }
+      .itemList .choosePage .page1 a {
+        color: white;
+        font-size: 16px;
+        line-height: 50px;
+        text-decoration: none; }
+    .itemList .choosePage .page2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+      .itemList .choosePage .page2 a {
+        color: #2f4053;
+        font-size: 16px;
+        line-height: 50px;
+        text-decoration: none; }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf"); }
+
+.footer {
+  margin-top: 40px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "LatoRegular"; }
+  .footer .footerBar {
+    width: 1200px;
+    height: 50px;
+    background-color: #3b2b2f;
+    margin: 0 auto;
+    justify-content: center;
+    line-height: 50px;
+    color: white; }
+    .footer .footerBar .locationIcon {
+      display: flex;
+      margin-right: 650px;
+      justify-content: space-evenly; }
+      .footer .footerBar .locationIcon .fa-map-marker-alt {
+        margin-top: 15px;
+        margin-right: 20px; }
+      .footer .footerBar .locationIcon .find {
+        margin-right: 10px; }
+    .footer .footerBar .followUs {
+      display: flex;
+      float: right;
+      margin-top: -65px;
+      margin-right: 100px; }
+      .footer .footerBar .followUs p {
+        margin-right: 10px; }
+      .footer .footerBar .followUs i {
+        margin-top: 15px;
+        padding-right: 15px; }
+  .footer .BotFooter {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto; }
+    .footer .BotFooter .role4 h3 {
+      margin-top: 40px; }
+  .footer .footerLine {
+    margin: 0 auto;
+    width: 1200px;
+    height: 1px;
+    background-color: grey; }
+  .footer .footerCopyRight {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    font-size: 12px; }
+
+@media only screen and (max-width: 765px) {
+  .footer {
+    text-align: center; }
+    .footer .footerBar {
+      display: block;
+      height: 150px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; }
+      .footer .footerBar .locationIcon {
+        display: block; }
+      .footer .footerBar .followUs {
+        display: block; }
+    .footer .BotFooter {
+      display: block; } }
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf"); }
+
+.shoppingCart {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  margin-top: 60px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  font-family: "LatoLight"; }
